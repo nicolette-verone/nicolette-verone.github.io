@@ -1,0 +1,69 @@
+{
+  "nodes":[
+    {"name":"Hugo Fernandes","group":1},
+    {"name":"Primary Motor Cortical Discharge During Force Field Adaptation Reflects Muscle Dynamics","group":2},
+    {"name":"Natural scene saliency and saccade encoding in the frontal eye field","group":3},
+    {"name":"Generalization of uncertainty", "group":3},
+    {"name":"We used to know, now we think: Humans sample from the posterior","group":3},
+    {"name":"It’s uncertainty about uncertainty, stupid","group":2},
+    {"name":"Uncertainty representation in PMd and M1","group":2},
+    {"name":"relevance","group":2},
+    {"name":"Precise neural timings from noisy asynchronous measurements ","group":2},
+    {"name":"Cherian A","group":4},
+    {"name":"Miller L","group":4},
+    {"name":"Kording KP","group":5},
+    {"name":"Stevenson IH","group":5},
+    {"name":"Philips AN","group":4},
+    {"name":"Seagraves MA","group":4},
+    {"name":"Acuna D","group":5},
+    {"name":"Berniker M","group":5},
+    {"name":"Yoshi S","group":5},
+    {"name":"Brian","group":5},
+    {"name":"Wanda P","group":5},
+    {"name":"Ramkumar P","group":5},
+    {"name":"Cybulski T","group":5}
+
+  ],
+  "links":[
+   
+    {"source":0,"target":1,"value":1},
+    {"source":1,"target":9,"value":4},
+    {"source":1,"target":10,"value":2},
+
+    {"source":0,"target":2,"value":4},
+    {"source":2,"target":11,"value":2},
+    {"source":2,"target":12,"value":1},
+    {"source":2,"target":13,"value":1},
+    {"source":2,"target":14,"value":1},
+
+    {"source":0,"target":3,"value":4},
+    {"source":3,"target":11,"value":2},
+    {"source":3,"target":12,"value":1},
+
+    {"source":0,"target":4,"value":4},
+    {"source":4,"target":11,"value":2},
+    {"source":4,"target":15,"value":4},
+    {"source":4,"target":16,"value":4},
+
+    {"source":0,"target":5,"value":1},
+    {"source":5,"target":17,"value":4},
+    {"source":5,"target":11,"value":2},
+
+    {"source":0,"target":6,"value":1},
+    {"source":6,"target":11,"value":2},
+    {"source":6,"target":18,"value":4},
+    {"source":6,"target":19,"value":4},
+    {"source":6,"target":20,"value":1},
+    {"source":6,"target":10,"value":2},
+
+    {"source":0,"target":7,"value":1},
+    {"source":7,"target":20,"value":4},
+    {"source":7,"target":11,"value":2},
+
+    {"source":0,"target":8,"value":1},
+    {"source":8,"target":11,"value":2},
+    {"source":8,"target":21,"value":4}
+
+    
+  ]
+}

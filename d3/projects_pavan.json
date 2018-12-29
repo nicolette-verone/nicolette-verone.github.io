@@ -1,0 +1,180 @@
+{
+  "nodes":[
+
+    /*Primary Author*/
+    {"name":"Ramkumar P","group":1},            //0
+
+    /*Co-authors*/
+
+    /*One paper together*/
+    {"name":"Malinen S","group":2},             //1
+    {"name":"Vartiainen N","group":2},          //2
+    {"name":"Hlushchuk Y","group":2},           //3
+    {"name":"Koskinen M","group":2},            //4
+    {"name":"Forss N","group":2},               //5
+    {"name":"Kalso E","group":2},               //6
+
+    {"name":"Jas M","group":2},                 //7
+
+    {"name":"Hansen BC","group":2},             //8
+    {"name":"Loschky LC","group":2},            //9
+
+    {"name":"Wanda PA","group":2},              //10
+    {"name":"Cooler S","group":2},              //11
+
+    {"name":"Smith MA","group":2},              //12
+
+    /*Two papers together*/
+    {"name":"Pannasch S","group":3},            //13
+
+    {"name":"Fernandes HL","group":3},          //14
+
+    {"name":"Miller LE","group":3},             //15
+    {"name":"Dekleva BM","group":3},            //16
+
+    {"name":"Lawlor PN","group":3},             //17
+    {"name":"Glaser JI","group":3},             //18
+    {"name":"Wood DK","group":3},               //19
+
+    {"name":"Acuna DE","group":3},              //20
+    {"name":"Berniker M","group":3},            //21
+    {"name":"Grafton ST","group":3},            //22
+    {"name":"Turner RS","group":3},             //23
+    
+    /*Three papers together*/
+    {"name":"Segraves MA","group":4},           //24
+
+    /*Four papers together*/
+    {"name":"Hyvärinen A","group":5},           //25
+
+    /*Five papers together*/
+    {"name":"Parkkonen L","group":6},           //26
+    {"name":"Hari R","group":6},                //27
+    
+    /*Eight papers together*/
+    {"name":"Körding KP","group":9},            //28
+
+    /*Articles*/
+
+    /*Published*/
+    {"name":"Aberrant spatiotemporal resting-state brain activation in patients with chronic pain","group":10},             //29
+    {"name":"Oscillatory Response Function: Towards a parametric model of rhythmic brain activity","group":10},             //30
+    {"name":"Independent component analysis of short-time Fourier transforms for spontaneous EEG/MEG analysis","group":10}, //31
+    {"name":"Characterization of neuromagnetic brain rhythms over time scales of minutes using spatial independent component analysis","group":10},  //32
+    {"name":"Testing independent component patterns by inter-subject or inter-session consistency","group":10},             //33
+    {"name":"Feature-specific information processing precedes concerted activation in human visual cortex","group":10},     //34
+    {"name":"Group-level spatial independent component analysis of Fourier envelopes of resting-state MEG data","group":10},//35
+    {"name":"Modeling peripheral visual acuity enables discovery of gaze strategies at multiple time scales during natural scene search","group":10},//36
+    
+
+    /*Under Review/ Revision*/
+    {"name":"Feature-based attention and spatial selection in frontal eye fields during natural scene search","group":11},  //37
+    {"name":"Visual information representation and natural scene categorization are simultaneous across cortex: An MEG study","group":11},  //38
+    {"name":"Chunking as the result of an efficiency–computation tradeoff","group":11},                                     //39
+    {"name":"Uncertainty leads to persistent representations of alternative movements in PMd","group":11},                  //40
+    {"name":"Frontal eye field represents expected reward of saccades during natural scene search.","group":11},            //41
+
+    /*Ongoing Projects*/
+    {"name":"A reinforcement signal in motor and premotor cortices","group":12},                                            //42
+    {"name":"Hue tuning during active vision in natural scenes","group":12},                                                //43
+    {"name":"Optimization costs underlying movement sequence chunking in basal ganglia","group":12}                         //44
+
+  ],
+
+
+  "links":[
+   
+  
+    {"source":0,"target":29,"value":2},
+    {"source":1,"target":29,"value":2},
+    {"source":2,"target":29,"value":2},
+    {"source":3,"target":29,"value":2},
+    {"source":4,"target":29,"value":2},
+    {"source":5,"target":29,"value":2},
+    {"source":6,"target":29,"value":2},
+    {"source":27,"target":29,"value":2},
+
+    {"source":0,"target":30,"value":2},
+    {"source":26,"target":30,"value":2},
+    {"source":27,"target":30,"value":2},
+
+    {"source":0,"target":31,"value":2},
+    {"source":25,"target":31,"value":2},
+    {"source":26,"target":31,"value":2},
+    {"source":27,"target":31,"value":2},
+
+    {"source":0,"target":32,"value":2},
+    {"source":25,"target":32,"value":2},
+    {"source":26,"target":32,"value":2},
+    {"source":27,"target":32,"value":2},
+
+    {"source":0,"target":33,"value":2},
+    {"source":25,"target":33,"value":2},
+
+    {"source":0,"target":34,"value":2},
+    {"source":7,"target":34,"value":2},
+    {"source":13,"target":34,"value":2},
+    {"source":26,"target":34,"value":2},
+    {"source":27,"target":34,"value":2},
+
+    {"source":0,"target":35,"value":2},
+    {"source":25,"target":35,"value":2},
+    {"source":26,"target":35,"value":2},
+
+    {"source":0,"target":36,"value":2},
+    {"source":14,"target":36,"value":2},
+    {"source":24,"target":36,"value":2},
+    {"source":28,"target":36,"value":2},
+
+    {"source":0,"target":37,"value":2},
+    {"source":17,"target":37,"value":2},
+    {"source":18,"target":37,"value":2},
+    {"source":19,"target":37,"value":2},
+    {"source":24,"target":37,"value":2},
+    {"source":28,"target":37,"value":2},
+
+    {"source":0,"target":38,"value":2},
+    {"source":8,"target":38,"value":2},
+    {"source":9,"target":38,"value":2},
+    {"source":13,"target":38,"value":2},
+    
+    {"source":0,"target":39,"value":2},
+    {"source":20,"target":39,"value":2},
+    {"source":21,"target":39,"value":2},
+    {"source":22,"target":39,"value":2},
+    {"source":23,"target":39,"value":2},
+    {"source":28,"target":39,"value":2},
+   
+    {"source":0,"target":40,"value":2},
+    {"source":10,"target":40,"value":2},
+    {"source":15,"target":40,"value":2},
+    {"source":16,"target":40,"value":2},
+    {"source":28,"target":40,"value":2},
+
+    {"source":0,"target":41,"value":2},
+    {"source":17,"target":41,"value":2},
+    {"source":18,"target":41,"value":2},
+    {"source":19,"target":41,"value":2},
+    {"source":23,"target":41,"value":2},
+    {"source":28,"target":41,"value":2},
+
+    {"source":0,"target":42,"value":2},
+    {"source":11,"target":42,"value":2},
+    {"source":15,"target":42,"value":2},
+    {"source":16,"target":42,"value":2},
+    {"source":28,"target":42,"value":2},
+
+    {"source":0,"target":43,"value":2},
+    {"source":12,"target":43,"value":2},
+    {"source":14,"target":43,"value":2},
+    {"source":28,"target":43,"value":2},
+
+    {"source":0,"target":44,"value":2},
+    {"source":20,"target":44,"value":2},
+    {"source":21,"target":44,"value":2},
+    {"source":22,"target":44,"value":2},
+    {"source":23,"target":44,"value":2},
+    {"source":28,"target":44,"value":2}
+     
+  ]
+}

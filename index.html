@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nicolette Verone</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!-- This is where the background image is set on the splash page -->
+    <link href="css/grayscale-agency.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="figs/favicon-bar-chart-o.ico" rel="shortcut icon">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- D3JS scripts -->
+    <script type="text/javascript" src="./d3/d3.v3.js"></script>
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <link href="css/zoom.css" rel="stylesheet">
+    <script type="text/javascript" src="js/zoom.js"></script>
+    <script type="text/javascript" src="js/transition.js"></script>
+
+    <!-- Google Analytics Tracking -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73654333-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Home</span>
+                </a>
+            </div>
+
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#news">News</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#publications">Publications</a>
+                    </li>
+<!--                     <li>
+                        <a class="page-scroll" href="#portfolio">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#software">Software</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#collaborators">Collaborators</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+
+                        <h6 class="brand-heading">desire and fantasy</h6>
+
+                        <p class="intro-text"><i>"“We demand that sex speak the truth […] and we demand that it tell us our truth, or rather, the deeply buried truth of that truth about ourselves which we think we possess in our immediate consciousness."</i> &mdash; Michel Foucault </p>
+
+                        <a href="#news" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- News Section -->
+    <section id="news" class="container content-section text-justify">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Recent News</h2>
+              <!-- <h3 class="section-subheading text-muted"></h3> -->
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <p> <b>December 2018</b> I'm Awesome!
+              </p>
+
+              <p> <b>November 2018</b> How awesome am I?
+              </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <figure>
+                    <img src="img/nicolette.jpg" alt="Pavan" width=400 class="img-rounded" data-action="zoom">
+                    <!--<figcaption>Photo Credit: Titipat Achakulvisut</figcaption> -->
+                </figure>
+                <h3>Nicolette Verone</h3>
+
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="mailto:nicoletteverone@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope-o fa-fw"></i> <span class="network-name">Email</span></a>
+                    </li>
+                    <li>
+                        <a href="http://danielkentwood.github.io/pdfs/cv2.pdf" class="btn btn-default btn-lg"><i class="fa fa-file-text-o fa-fw"></i> <span class="network-name">CV</span></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/NicoletteVerone" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/nicolette-verone" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                </ul>
+                <p> Departments of ??, ?? University </p>
+
+                <p>I study sex!</p>
+
+                <p>I am currently a PhD student, studying with ?? at ?? University.</p>
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="container content-section text-justify">
+
+        <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Publications</h2>
+              <!-- <h3 class="section-subheading text-muted"></h3> -->
+          </div>
+        </div>
+        <!-- List the publications -->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <p>[14] <span class="author">Wood, DK*</span>, Chouinard, PA*, Major, AJ, and Goodale, MA (2016). The selection of biomechanically viable grasp postures depends on posterior intraparietal sulcus. <span class="journal">Cortex</span>, In Press. 
+                  <a href="http://danielkentwood.github.io/pdfs/[14] Cortex 2016 Wood.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+                <p>[13] Gu, C, <span class="author">Wood, DK</span>, Gribble, PL, and Corneil, BD (2016). A trial-by-trial window into sensorimotor transformations in the human motor periphery. <span class="journal">Journal of Neuroscience</span>, In Press. 
+                  <a href="http://danielkentwood.github.io/pdfs/[13] J Neurosci 2016 Gu.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+                <p>[12] Ramkumar P*, Lawlor PN*, Glaser JI, <span class="author">Wood DK</span>, Segraves MA, Körding KP (2016). Feature-based attention and spatial selection in frontal eye fields during natural scene search. <span class="journal">Journal of Neurophysiology</span>, In Press. </p>
+                <p>[11] Glaser JI*, <span class="author">Wood DK* (Co-First Author)</span>, Lawlor PN, Ramkumar P, Körding KP, Segraves MA (2016). Frontal eye field represents expected reward of saccades during natural scene search. <span class="journal">Journal of Neurophysiology</span>, In Press. 
+                  <a href="http://danielkentwood.github.io/pdfs/[11] J Neurophys 2016 Glaser_Wood.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+                <p>[10] Goonetilleke SC, Katz L, <span class="author">Wood, DK</span>, Gu C, Huk A, Corneil BD (2015). Cross-species comparison of anticipatory and stimulus-driven neck muscle activity. <span class="journal">Journal of Neurophysiology</span>, 114(2), pp. 902-913. 
+                  <a href="http://danielkentwood.github.io/pdfs/[10] J Neurophysiol 2015 Goonetilleke.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+                <p>[9] <span class="author">Wood, DK</span>, Gu C, Corneil BD, Gribble PL, Goodale MA (2015). Transient visual responses reset the phase of low-frequency oscillations in the skeletomotor periphery. <span class="journal">European Journal of Neuroscience</span>, 42(3), pp. 1919-1932. 
+                  <a href="http://danielkentwood.github.io/pdfs/[9] Eur J Neurosci 2015 Wood.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+                <p>[8] Chapman CS, Gallivan, JP, <span class="author">Wood, DK</span>, Milne JL, Ansari D, Culham JC, Goodale MA (2014). Counting on the motor system: Rapid action planning reveals the format- and magnitude-dependent extraction of numerical quantity. <span class="journal">Journal of Vision</span>, 14, pp. 1-19. 
+                  <a href="http://danielkentwood.github.io/pdfs/[8] J Vis 2014 Chapman.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+                <p>[7] Milne JL, Chapman CS, Gallivan, JP, <span class="author">Wood, DK</span>, Culham JC, Goodale MA (2013). Object connectedness influences perceptual comparisons but not the planning or control of rapid reaches to multiple goals. <span class="journal">Psychological Science</span>, 24, pp. 1456-1465. 
+                  <a href="http://danielkentwood.github.io/pdfs/[7] Psychol Sci 2013 Milne.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+                <p>[6] <span class="author">Wood, DK</span>, Gallivan, JP, Chapman CS, Milne JL, Culham JC, Goodale MA (2011). Visual salience dominates early visuomotor competition in reaching behavior. <span class="journal">Journal of Vision</span>, 11, pp. 1-11. 
+                  <a href="http://danielkentwood.github.io/pdfs/[6] J Vis 2011 Wood.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+                <p>[5] Gallivan, JP, Chapman CS, <span class="author">Wood, DK</span>, Milne JL, Culham JC, Ansari D, Goodale MA (2011). One to four, and nothing more: Non-conscious parallel object individuation in action. <span class="journal">Psychological Science</span>, 22, pp. 803-811. 
+                  <a href="http://danielkentwood.github.io/pdfs/[3] Psychol Sci 2011 Gallivan.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+                <p>[4] <span class="author">Wood, DK</span>, Goodale MA (2011). Selection of wrist posture in conditions of motor ambiguity. <span class="journal">Experimental Brain Research</span>, 208, pp. 607-620. 
+                  <a href="http://danielkentwood.github.io/pdfs/[4] Exp Brain Res 2011 Wood.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+                <p>[3] Chapman CS, Gallivan JP, <span class="author">Wood, DK</span>, Milne JL, Culham JC, Goodale MA (2010). Short-term motor plasticity revealed in a visuomotor decision-making task. <span class="journal">Behavioral Brain Research</span>, 214, pp. 130-134. 
+                  <a href="http://danielkentwood.github.io/pdfs/[3] Behav Brain Res 2010 Chapman.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+                <p>[2] Chapman CS, Gallivan JP, <span class="author">Wood, DK</span>, Milne JL, Culham JC, Goodale MA (2010). Reaching for the unknown: Multiple target encoding and real-time decision-making in a rapid reach task. <span class="journal">Cognition</span>, 116, pp. 168-176. 
+                  <a href="http://danielkentwood.github.io/pdfs/[2] Cognition 2010 Chapman.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+                <p>[1] Gallivan JP, <span class="author">Wood, DK</span> (2009). Simultaneous encoding of potential grasp movements in macaque AIP. <span class="journal">Journal of Neuroscience</span>, 29, pp. 12031-12032. 
+                  <a href="http://danielkentwood.github.io/pdfs/[1] J Neurosci 2009 Gallivan.pdf"><i class="fa fa-file-pdf-o"></i> [pdf] </a></p>
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <!-- Postural bistability and internal models of biomechanics
+         The time course of bottom up contrast effects on rapid reaching behavior
+         Exploratory and exploitative eye movements, and their encoding in FEF
+         Rapid visual responses in the skeletomotor periphery
+         Cortical and subcortical oculomotor circuits in mice -->
+
+
+
+<!--     <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Projects</h2> -->
+<!--                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-reorder fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="badges/08-PINS.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Natural scene psychophysics</h4> -->
+                   <!--  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-reorder fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="badges/07-CNN.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Synthetic neurophysiology</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-reorder fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="badges/01-FEF.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Visual search in natural scenes</h4>
+                        <p class="text-muted">Frontal eye fields</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-reorder fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="badges/02-MEG.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Rapid scene categorization</h4>
+                        <p class="text-muted">Whole-scalp magnetoencephalography</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-reorder fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="badges/03-Chunk.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Movement chunking</h4>
+                        <p class="text-muted">Basal ganglia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-reorder fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="badges/04-Unc.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Sensorimotor uncertainty</h4>
+                        <p class="text-muted">Premotor cortex</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-reorder fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="badges/05-Reward.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Reward</h4>
+                        <p class="text-muted">Premotor and motor cortices</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-reorder fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="badges/06-V4.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Color perception in natural scenes</h4>
+                        <p class="text-muted">Area V4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ -->
+
+    <!-- Software Section -->
+<!--     <section id="software" class="container content-section text-justify">
+
+        <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Software</h2>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <h3> Pyglmnet: A Python package for elastic-net regularized generalized linear models </h3>
+
+              <ul class="list-inline banner-social-buttons">
+                  <li>
+                      <a href="http://pavanramkumar.github.io/pyglmnet" class="btn btn-default btn-lg"><i class="fa fa-file-code-o fa-fw"></i> <span class="network-name">Documentation</span></a>
+                  </li>
+                  <li>
+                      <a href="https://github.com/pavanramkumar/pyglmnet" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                  </li>
+              </ul>
+
+              <p>Generalized linear models (GLMs) are powerful tools for
+              multivariate regression. They allow us to model different types
+              of target variables: real, categorical, counts, ordinal, etc.
+              using multiple predictors or features. In the era of big data,
+              and high performance computing, GLMs have come to be widely applied
+              across the sciences, economics, business, and finance. </p>
+
+              <p> <a href="https://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html">Glmnet </a>
+              is a popular and robust R package for for elastic-net regularized GLMs. Yet, at present,
+              <a href="http://scikit-learn.org/stable/">Scikit Learn</a>, Python's
+              leading machine learning library, only implements
+              <a href="http://scikit-learn.org/stable/modules/linear_model.html#elastic-net">
+              elastic net for linear models</a>.
+              At present there is no native implementation of elastic net for logistic or Poisson
+              regression. I developed Pyglmnet to address this need. </p>
+
+              <p> The package aims to mimic the functionality of the R package.
+              The API documentation is inspired by Python’s Scikit Learn and the
+              design is mindful of both R and Scikit Learn users. It has easy
+              interoperability with various scikit learn tools for preprocessing,
+              cross validation, scoring, etc. </p>
+
+            </div>
+        </div>
+
+    </section>
+ -->
+
+
+    <!-- Collaborators section -->
+<!--     <section id="collaborators" class="container content-section text-justify">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Collaborators</h2>
+              <h3 class="section-subheading text-muted">Graph visualization of collaborators and projects</h3>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <p>
+                    Below is a visualization of my publications and ongoing projects embedded in my network of 28 co-authors using the <a href="https://github.com/mbostock/d3/wiki/Force-Layout">force-directed graph</a> schema. Cool-colored nodes represent authors and warm-colored nodes represent projects. Links represent authors that have collaborated together on a project. Nodes representing co-authors are sized according to the number of papers or projects I have in common with them. If you're viewing this on a desktop, moving the mouse over a node gives you the name of the author or the title of the publication or project that it represents.
+
+
+                 <table style="width:100%">
+                  <tr>
+                    <td><span style="color:#07b849"><i class="fa fa-circle"></i></span></td>
+                    <td>Me</td>
+                    <td><span style="color:#9e9225"><i class="fa fa-circle"></i></span></td>
+                    <td>Accepted/ Published Articles</td>
+                  </tr>
+                  <tr>
+                    <td><span style="color:#3b5998"><i class="fa fa-circle"></i></span></td>
+                    <td>PI co-authors</td>
+                    <td><span style="color:#d2c43d"><i class="fa fa-circle"></i></span></td>
+                    <td>Articles Under Review/ Revision</td>
+                  </tr>
+                  <tr>
+                    <td><span style="color:#88bee4"><i class="fa fa-circle"></i></span></td>
+                    <td>Grad student or postdoc co-authors</td>
+                    <td><span style="color:#d27a3d"><i class="fa fa-circle"></i></span></td>
+                    <td>Ongoing Projects</td>
+                  </tr>
+                </table>
+
+                </p>
+            </div>
+        </div> -->
+
+        <!-- Add d3js visualization  -->
+<!--         <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <script>
+                    var width = 1200,
+                        height = 500;
+
+                    var color = d3.scale.category20();
+
+                    var force = d3.layout.force()
+                        .charge(-150)
+                        .linkDistance(70)
+                        .gravity(0.05)
+                        .size([width, height]);
+
+                    var svg = d3.select("body").append("svg")
+                        .attr("width", width)
+                        .attr("height", height);
+                        //.attr("class", 'col-sm-8 col-sm-offset-2');
+
+                    d3.json("./d3/projects_pavan_nocomments.json", function(error, graph) {
+                      force
+                          .nodes(graph.nodes)
+                          .links(graph.links)
+                          .start();
+
+                      var link = svg.selectAll("line.link")
+                          .data(graph.links)
+                        .enter().append("line")
+                          .attr("class", "link")
+                          .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+
+                      var node = svg.selectAll("circle.node")
+                          .data(graph.nodes)
+                        .enter().append("circle")
+                          .attr("class", "node")
+                          .attr("r", function(d) { return d.size; })
+                          .style("fill", function(d) { return d.color; })
+                          .call(force.drag);
+
+                      node.append("title")
+                          .text(function(d) { return d.name; });
+
+                      force.on("tick", function() {
+                        link.attr("x1", function(d) { return d.source.x; })
+                            .attr("y1", function(d) { return d.source.y; })
+                            .attr("x2", function(d) { return d.target.x; })
+                            .attr("y2", function(d) { return d.target.y; });
+
+                        node.attr("cx", function(d) { return d.x; })
+                            .attr("cy", function(d) { return d.y; });
+                      });
+                    });
+                </script>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Map Section
+    <div id="map"></div> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; Daniel Wood 2016</p>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal 1 -->
+<!--     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body"> -->
+                            <!-- Project Details Go Here -->
+                            <!-- <h2>Visual search and FEF</h2>
+                            <h4><span style="color: #3b5998">With: Hugo Fernandes, Pat Lawlor, Josh Glaser, Daniel Wood, Mark Segraves, Konrad Körding</span></h4>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                            <p>
+                              To bring objects of interest in the visual environment into focus, we shift our gaze up to three times a second.
+                              Deciding where to look next among a large number of alternatives is thus one of the most frequent decisions we make.
+                              Why do we look where we look?
+                            </p>
+
+                            <p>Studies have shown that both bottom-up (e.g. luminance contrast, saliency, edge–energy) and top-down factors (such as target similarity or relevance) influence the guidance of eye movements.
+                              Predictive models of eye movements are derived from priority maps composed of one or more of these factors.
+                              Evidence for such maps have been reported in the lateral intra parietal (LIP) cortex, the frontal eye field (FEF), primary visual cortex (V1) and/or ventral visual area V4, but computational maps of priority have not been used to model neural activity.
+                            </p>
+
+                            <p>In this project, we attempt to unify computational models and neurophysiology of gaze priority maps.
+                              We developed primate models of gaze behavior in natural scenes by rewarding monkeys to find targets embedded in scenes.
+                              We build predictive models of gaze using computational definitions of visual priority and quantify model predictions on monkeys' fixation choices.
+                            </p>
+
+                            <figure>
+                                <img src="figs/FEF_Figure01.png" alt="FEF" width=750 class="img-responsive" data-action="zoom">
+                                <figcaption>
+                                    <b>Fig. 1</b>. Prediction of gaze using visual features at fixation. We compared bottom-up saliency, top-down relevance and edge-energy at fixated (above: left panel) and non-fixated, i.e. shuffled control (above: right panel) targets by computing the area under the ROC curves (below). The star indicates statistically significant difference from a chance level of 0.5.
+                                </figcaption>
+                            </figure>
+
+                            <p> To ask if FEF neurons represent computational descriptions of priority including saliency, relevance and energy, we build generalized linear models (GLMs) of Poisson-spiking neurons (see Fig. 2). </p>
+
+                            <figure>
+                                <img src="figs/FEF_Figure02.png" alt="FEF" width=750 class="img-responsive" data-action="zoom">
+                                <figcaption>
+                                    <b>Fig. 2</b>. A comprehensive generative model of neural spikes using a GLM framework. The model comprises visual features: saliency, relevance and energy from a neighborhood around fixation location after the saccade, un-tuned responses aligned to saccade and fixation onsets, and the direction of the saccade. The features are passed through parameterized spatial filters (representing the receptive field) and temporal filters. The model also comprises spike history terms (or self terms). All these features are linearly combined followed by an exponential nonlinearity, which gives the conditional intensity function of spike rate, given model parameters. Spikes are generated from this model by sampling from a Poisson distribution with mean equal to the conditional intensity function. Brown: basis functions modeling temporal activity around the saccade onset; Green: basis functions modeling temporal responses around the fixation onset; Blue: basis functions modeling temporal responses after spike onset.
+                                </figcaption>
+                            </figure>
+
+                            <p> We find that the majority of variance in FEF firing rates are explained by the direction of upcoming movement.
+                              However, we find firing rate enhancement for saccades to targets within the receptive field, suggesting that FEF neurons encode expected reward during search.
+                            </p>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ -->
+    <!-- Portfolio Modal 2 -->
+    <!-- <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                          <h2>Rapid scene categorization and MEG</h2>
+                          <h4><span style="color: #3b5998">With: Sebastian Pannasch, Bruce Hansen, Lester Loschky</span></h4>
+                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+
+                          <p>To make effective decisions in our environment, our brains must be able to effectively recognize and comprehend real-world scenes. Human are remarkable at recognizing scene categories from the briefest of glimpses (< 20 ms). The holistic information that can be extracted in such short durations has come to be known as <b><i>scene gist</i></b>.</p>
+
+                          <p>Computational models of scene gist, such as the spatial envelope (SpEn) model, as well as behavioral studies provide useful suggestions for what visual features the brain might use to categorize scenes. However, they do not inform us about when and where in the brain such information is represented and how scene-categorical judgments are made on the basis of these representations.</p>
+                          <figure>
+                              <img src="figs/MEGFigure01.png" alt="MEG" width=750 class="img-responsive" data-action="zoom">
+                              <figcaption>
+                                  <b>Fig. 3</b>. Means and standard errors of median cross-validated relative R2s for each region of interest (ROI). Relative R2s are a measure of the extent to which unique variance in the neural decoder’s pattern of errors can be explained by behavioral confusion matrices (red) or SpEn confusion matrices (blue). Red (blue) bands at the bottom of each trace indicate the time durations for which unique variance in neural decoder-based errors explained by behavioral errors exceed (fall below) image decoder-based errors. In the two time series plots for each ROI, the left and right plots represent data from the left and right hemispheres respectively. The legends show the ROIs on the lateral (above) and medial (below) surfaces of the left hemisphere.
+                              </figcaption>
+                          </figure>
+
+                          <p>Here, we investigate the brain-behavior relationship underlying rapid scene categorization. We use whole-scalp magnetoencephalography (MEG) to track visual scene information flow in the ventral and temporal cortex, using spatially and temporally resolved maps of decoding accuracy. To investigate the time course of visual representation versus behavioral category judgment, we then use neural decoders in concert with decoders based on SpEn features to study errors in behavioral categorization (Fig. 3). Using confusion matrices, we track how well patterns of errors in neural decoders are be explained by SpEn decoders and behavioral errors. We find that both SpEn decoders and behavioral errors explain unique variance throughout the ventrotemporal cortex, and that their effects are temporally simultaneous and restricted to 100-250 ms after stimulus onset. Thus, during rapid scene categorization, neural processes that ultimately result in behavioral categorization are simultaneous and colocalized with neural processes underlying visual information representation. </p>
+
+                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Portfolio Modal 3 -->
+    <!-- <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+  
+                            <h2> Movement chunking and basal ganglia</h2>
+                            <h4><span style="color: #3b5998">With: Daniel Acuna, Max Berniker, Rob Turner, Scott Grafton, Konrad Körding</span></h4>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+
+                            <p>We routinely execute complex movement sequences with such effortless ease that the computational complexity of planning them optimally is often under-appreciated. When movements are learned from external cues, they start out highly regular, progressively become more varied until the become habitual and more regular again (Fig. 4). </p>
+                            <figure>
+                                <img src="figs/Chunking_Figure01.png" alt="Chunking" width=750 class="img-responsive" data-action="zoom">
+                                <figcaption>
+                                    <b>Fig. 4</b>. Movements become more regular with learning (a) Reaching task. Monkeys move a cursor through 5 out-and-back reaches (10 elemental movements) between central and peripheral targets. White-filled circular cues indicate which target to capture. Each successful element is rewarded. (b) Hand trajectories; left: position, right: speed. Each trial is stretched to a duration of 5 s. Gray traces indicate single trials and bold colored traces indicate mean traces. The colored envelopes around the mean trace indicate one standard deviation on either side of the mean.
+                                </figcaption>
+                            </figure>
+
+                            <p> A common facet of many such complex movements is that they tend to be discrete nature, i.e. they are often executed as chunks (Fig. 5a). Here, we framed movement chunking as the result of a trade-off between the desire to make efficient movements and minimize the computational complexity of optimizing them (Fig. 5b). We show that monkeys adopt a cost-effective strategy to deal with this tradeoff. By modeling chunks as minimum-jerk trajectories (Fig. 5c), we found that kinematic sequences are best described as progressively resembling locally optimal trajectories, with optimization occurring within chunks (Fig. 5d). Thus, the cumulative optimization costs are kept in check over the course of learning.</p>
+
+                            <figure>
+                                <img src="figs/Chunking_Figure02.png" alt="Chunking" width=750 class="img-responsive" data-action="zoom">
+                                <figcaption>
+                                    <b>Fig. 5</b>. Modeling chunks as locally optimal-control trajectories. (a) Illustration of canonical halt and via models; green: via points, red: halt points. (b) Computing the trade off between efficiency and the complexity of being efficient. Each gray dot represents one potential chunk structure plotted against its maximally achievable efficiency under the model, and the corresponding computational complexity. The red curve is the convex hull of these points, and represents the Pareto frontier of the efficiency–computation tradeoff curve (c) Kinematics (black) and minimum jerk model (blue). Left: Trajectories become more looped as monkeys optimize over longer horizons. Middle: Speed traces. Initially trajectory optimization appears to happen over several chunks. Later in learning, a smaller number of chunks reveal increasingly efficient movements. Right: The squared jerk of the kinematic data and the model suggest that the behavior approaches the efficiency of the minimum jerk model after learning. (d) Goodness of fit (Pearson’s correlation coefficient) between the speed profiles of the minimum jerk model and the kinematic data (mean ± 2 SEMs) across days of learning.
+                                </figcaption>
+                            </figure>
+
+                            <p> To study the underlying neural basis of these tradeoffs, we also record from globus pallidus (GP) — motor output structures in the basal ganglia — implicated in habit learning and movement sequencing. Our hypothesis is that neurons encode complexity of a movement, and that this encoding depends on whether the movement is novel or habitual. To test this hypothesis, we train monkeys to execute habitual overlearned (OL) sequences comprising consecutive center–out–and–back reaches always in the same order, as well as novel random (RN) sequences comprising a set of four cued reaches whose directions varied from trial to trial. For each neuron and sequence class, we fit Poisson generalized linear models (GLMs) to account for firing rate variability as a function of multiple regressors: (1) the cue type, (2) the order of the movement in the sequence, (3) the upcoming reach direction, (5) the instantaneous hand kinematics, (6) the computational complexity of executing the rest of the sequence as a single chunk relative to the complexity of executing each movement as a separate chunk, (7) the efficiency of the upcoming movement, defined as the negative squared jerk, (7) a reward event at the end of each movement, and (8) a trial-end regressor. </p>
+
+                            <figure>
+                                <img src="figs/Chunking_Figure03.png" alt="Chunking" width=750 class="img-responsive" data-action="zoom">
+                                <figcaption>
+                                    <b>Fig. 6</b>. (a) GLM fits and partial model predictions for each of 4 elements (L to R) for an example neuron encoding cost and order of the movement in the sequence. The black trace shows PSTH aligned to cue onset; and colored traces in each panel show respective partial model predictions for that covariate. Shaded error bars show SEMs (b) Comparison of the number of neurons (as a % of all neurons) significantly modulated by each covariate, between OL and RN sequence classes. Positive numbers for a given covariate indicate that more neurons encode it in the OL condition. Neurons significantly encode a given covariate if a model that leaves out the covariate does significantly worse than the full model (99% CIs of cross-validated relative pseudo-R2s). Error bars are estimated by bootstrapping over 1000 repeats. All traces are computed from a held out test set.
+                                </figcaption>
+                            </figure>
+
+                            <p> We found that GP encoded the order of the movement in the context of the sequence, as well as the relative complexity and efficiency of movements (see example neuron in Fig. 6a). When we compared the habitual (OL) and the novel (RN) sequences, a significantly larger proportion of GP neurons encoded the order of the movement, but a significantly smaller proportion encoded the relative complexity (Fig. 6b). The complexity of optimal control is thus an important driver of habit learning, both behaviorally and neurally. </p>
+
+                            <p> Over and above the novel role of GP neurons in indexing computational complexity, we also found that a significantly larger proportion of GP neurons encode instantaneous arm kinematics during the habitual relative to the novel condition. Furthermore, a significantly smaller proportion of GP neurons encoded the cue and the reward during the habitual relative to the novel condition, suggesting that as movements become habituated with learning, GP firing rates are less modulated by response to an external movement cue or an external reward. Our findings suggest a dynamic functional role for GP — starting with bracketing movement sequences for goal-directed movements, and transitioning to a more direct control of movements once they are habituated. </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Portfolio Modal 4 -->
+   <!--  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            <h2 class="section-heading">Sensorimotor uncertainty and PMd</h3>
+                            <h4><span style="color: #3b5998">With: Brian Dekleva, Paul Wanda, Lee Miller, Konrad Körding</span></h4>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                            <p>Movements in the real world are often planned with uncertain information about where to move. Understanding the role of uncertainty in movement plans is important to improve rehabilitation therapies and brain-based prostheses. Bayesian estimation theory, which combines sources of information in proportion to their uncertainty, predicts movement behavior when uncertainty about subjective beliefs (priors) and sensory observations (likelihoods) is varied. By manipulating sensory uncertainty of the target in each trial of a reaching task, as well as the prior uncertainty of the target location during the task, we show that monkeys' reaches can be predicted using a Bayesian model that weights the different sources of uncertainty appropriately (Fig. 7). </p>
+
+                            <figure>
+                                <img src="figs/Uncertainty_Figure01.jpg" alt="Uncertainty" width=750 class="img-responsive" data-action="zoom">
+                                <figcaption>
+                                    <b>Fig. 7</b>. Left: Before a movement cue, the monkey was shown 10 dots from one of two circular Gaussian likelihood distributions (κ = 5 or 50). In each trial, the angular position of the target was drawn from a prior circular Gaussian distribution with one of two prior variances (κ = 5 or 50). The legend shows narrow and broad prior conditions in lower and upper case, respectively. Target locations and movement trajectories for individual trials are shown in respective colors. Right: The actual reach angle is plotted against likelihood mean angle. If monkeys plan their reach by integrating prior and likelihood information in a probabilistic manner, the slope of this line describes the extent to which the likelihood information influences reaching behavior (1). Bayes-optimal and observed slopes (bootstrapped 95% CIs) are shown on the top/bottom and left/right of the legend, respectively. The monkey weighs prior and likelihood meaningfully although it trusts likelihood information more than it should if it were strictly Bayes-optimal.
+                                </figcaption>
+                            </figure>
+
+                            <p> To perform probabilistic inference of this nature, the brain must represent/reflect uncertainty. We asked how sensory uncertainty is represented in population activity in dorsal premotor cortex (PMd) and primary motor cortex (M1) during movement preparation. We found that greater sensory uncertainty led to increased firing rates and broad recruitment of neurons in PMd but not M1 (Fig. 8). This broad recruitment suggests that multiple movement plans are represented in PMd activity until uncertainty-reducing feedback about the target location is received. </p>
+
+                            <figure>
+                                <img src="figs/Uncertainty_Figure02.png" alt="Uncertainty" width=750 class="img-responsive" data-action="zoom">
+                                <figcaption>
+                                    <b>Fig. 8</b>. Spatio-temporal activity profiles in PMd and M1. Activity is plotted for all neurons, ranked by the distance between preferred direction and reach direction. (a) In PMd, uncertainty led to increased baseline firing rates and broader recruitment. (b) There was narrower recruitment under zero-uncertainty conditions in M1, but no differences between low and high uncertainty conditions.
+                                </figcaption>
+                            </figure>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Portfolio Modal 5 -->
+    <!-- <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            <h2 class="section-heading">Reward in premotor and motor cortices</h3>
+                            <h4><span style="color: #3b5998">With: Brian Dekleva, Sam Cooler, Lee Miller, Konrad Körding</span></h4>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                            <p>Reward is an important feedback signal for motor learning. How reward information reaches the motor cortex to influence movement planning and execution is unknown. Therefore, we asked whether premotor and motor cortices encode reward. We found a strong and robust encoding of reward outcome in premotor (PMd) and motor (M1) cortices. In particular, neurons increased their firing rate following trials that were not rewarded. We further investigated the nature of this signal and established that it is unlike any previously reported reward signal in the brain. It is unrelated to reward magnitude expectation or prediction error, it is not influenced by history of reward, and it is not modulated by error magnitude. Using generalized linear modeling of spikes we also carefully verified that the signal is not explained away by differences in kinematics or return reach planning activity. Thus, we found a categorical reward signal in PMd and M1 signaling the presence or absence of reward at the end of a goal-directed task.</p>
+
+                            <figure>
+                                <img src="figs/Reward_Figure01.png" alt="Reward" width=750 class="img-responsive" data-action="zoom">
+                                <figcaption>
+                                    <b>Fig. 9</b>. Generalized linear modeling of reward coding. Model predictions for two example neurons are shown. Left: PSTHs for rewarded (blue) and unrewarded (red) trial subsets are shown for the test set, along with corresponding single-trial rasters for both data and model predictions on the test set. Right: Component predictions corresponding to each covariate.
+                                </figcaption>
+                            </figure>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Portfolio Modal 6 -->
+   <!--  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            <h2 class="section-heading">V4 color tuning in natural scenes</h3>
+                            <h4><span style="color: #3b5998">With: Hugo Fernandes, Matt Smith, Konrad Körding</span></h4>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+
+                            <p>How does the subjective experience of color arise from oscillations in the visible electromagnetic spectrum? We know that color perception begins in the L, M and S cone cells in the retina, which have broad preferred sensitivities to greenish-yellowish, greenish, and bluish frequencies in the electromagnetic spectrum. Following this stage, tuning to opponency — red-green, blue-yellow, light-dark — begins to emerge in the retina, the lateral geniculate nucleus (LGN), and the primary visual cortex (V1) where specialized color cells in V1 are clustered into "blobs". </p>
+
+                            <p> The ventral visual area V4 is the first stage at which tuning to hue — subjectively experienced colors — begins to emerge. However, most experiments measuring hue tuning have been done with highly controlled artificial stimuli such as bars or gratings carefully optimized for preferred orientation and spatial receptive fields. Therefore, not much is known about the neural representation of perceived hue in naturalistic conditions. </p>
+
+                            <figure>
+                              <img src="figs/V4_Figure01.png" alt="V4" width=750 class="img-responsive" data-action="zoom">
+                                  <figcaption>
+                                      <b>Fig. 10.</b> Perceived hue can be paramterized as a circular variable in HSI space.
+                                  </figcaption>
+                            </figure>
+
+                            <p> In this project, we build encoding models of V4 spiking activity using a generalized linear model (GLM) framework when monkeys freely viewed natural scenes. We take advantage of the fact that hue can be represented on a circle by using the HSI color space and assuming a broad cosine tuning (Fig. 10). We show that these assumptions are sufficient to rapidly fit encoding models of V4 spikes — in response to naturalistic free viewing — as a function of luminance, hue and orientation, and saturation with very few parameters (Figs. 11, 12). </p>
+
+                            <figure>
+                              <img src="figs/V4_Figure02.png" alt="V4" width=750 class="img-responsive" data-action="zoom">
+                                  <figcaption>
+                                      <b>Fig. 11</b>. A comprehensive generative model of V4 spiking activity using a GLM framework. The model comprises visual features at saccade landings, averaged within the receptive field: hue angle, orientation, luminance, and saturation, as well as an un-tuned response aligned to fixation onsets. The features are passed through previously characterized spatial receptive fields (RFs) and learnable temporal filters. All these features are linearly combined followed by an exponential nonlinearity, which gives the conditional intensity function of spike rate, given model parameters. Spikes are generated from this model by sampling from a Poisson distribution with mean equal to the conditional intensity function.
+                                  </figcaption>
+                            </figure>
+
+                            <figure>
+                              <img src="figs/V4_Figure03.png" alt="V4" width=750 class="img-responsive" data-action="zoom">
+                                  <figcaption>
+                                      <b>Fig. 12</b>. Example V4 neuron whose firing rates are modulated by both average hue and orientation within the cell's receptive field. Left: relative pseudo-R2s between models leaving out the covariates of interest (hue, orientation, luminance, saturation) and a full model and their bootstrapped 95% confidence intervals. Center: Modeled temporal responses to with dashed lines showing predicted mean change in firing rate aligned to fixation onset, and solid lines showing predicted change in firing rates at preferred and non-preferred orientation (above) or hue (below). Right: peri-saccade time histograms of the data and model, aligned to fixation onset.
+                                  </figcaption>
+                            </figure>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Portfolio Modal 7 -->
+<!--     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            <h2 class="section-heading">Synthetic Neurophysiology with CNNs</h3>
+                            <h4><span style="color: #3b5998">With: Hugo Fernandes, Matt Smith, Konrad Körding</span></h4>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                            <p> The ventral visual stream in the visual cortex consists of several brain areas that progressively represent more abstract aspects of visual information, going from orientations and spatial frequencies in the primary visual cortex (V1) to object identities in the inferior temporal (IT) cortex. The exact computational nature of this feed-forward transformation is yet to be completely characterized. Visual area V4 — being an intermediate are in this pathway — is a prime candidate to understand the computations underlying our visual percepts. </p>
+
+                            <p>Deep convolutions neural networks (CNNs) have recently seen tremendous success in real-world visual tasks such as object recognition. It has also been shown that they capture the representational properties of the inferior temporal cortex (IT) in both humans and monkeys across a wide range of object categories, suggesting that they are excellent biophysical and computational approximations of the feed-forward part of the ventral visual stream. Thus, pre-trained CNNs can be used as substrates to study the computational and representational properties of neurons all over the ventral stream. This is a promising new technique to bridge computational and physiological approaches to understanding vision and has come to be known as synthetic neurophysiology. </p>
+
+                            <figure>
+                              <img src="figs/DeepCNN_Figure01.png" alt="V4" width=750 class="img-responsive" data-action="zoom">
+                                <figcaption>
+                                      <b>Fig. 13</b>. Activations of all units of a popular pre-trained deep CNN architecture (Alex Net) for an example checkerboard stimulus.
+                                </figcaption>
+                            </figure>
+
+                            <p>Here, we focus on the visual area V4. We present artificial stimuli such as colored checkerboards (picture above) to CNNs and study the tuning properties of synthetic neurons in the CNN. Preliminary analysis suggests that synthetic neurons are hue-tuned, and further, the distribution of preferred hue across the population of synthetic neurons resembles those of real V4 neurons characterized during the free-viewing of natural scenes. Both these distributions also mirror the highly non-uniform distribution of hues in natural scenes. </p>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Portfolio Modal 8 -->
+    <!-- <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                            <h2 class="section-heading">Natural scene psychophysics with CNNs</h3>
+                            <h4><span style="color: #3b5998">With: Claire Chambers, Hugo Fernandes, Pat Lawlor, Josh Glaser, Konrad Körding</span></h4>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                            <p> During visual search in natural scenes, targets can only be fixated after they are detected in our visual periphery. Why is the same target detected in some contexts but undetected in others? This question has been difficult to address with standard psychophysical techniques due to the interaction between natural scene statistics, visual crowding, and feature-based attention. </p>
+
+                            <figure>
+                              <img src="figs/PINS_Figure01.png" alt="V4" width=750 class="img-responsive" data-action="zoom">
+                                <figcaption>
+                                      <b>Fig. 14</b>. Three scenarios for target detection. Top panel: the target is not detected either because the fixation is too far away from the target (outside the range of peripheral vision) or because there are other interesting things to look at in the scene (salient distractors). Middle panel: the target is detected because the fixation is close to the target (within the range of peripheral vision) and because the target is not obscured by its local context (target saliency). Bottom panel: the target is not detected even though it is within the range of peripheral vision because it is obscured by its local context (target crowding). We train CNNs using both fixation-centered and target-centered glimpses at multiple resolution to predict the outcome, i.e. whether the animal finds the target in the subsequent saccade or not.
+                                </figcaption>
+                            </figure>
+
+                            <p>Here, we use a large natural scene search database of monkeys searching for a Gabor wavelet embedded in natural scenes. We train convolutional neural networks (CNNs) to distinguish between detected and undetected contexts. The CNN uses fixation–centered and target–centered multi-scale glimpses as inputs and learns to predict whether the animal saccaded to the target or not. The CNN-based approach complements models based on distance-to-target, peak velocity, fixation duration, local multiscale contrast, and saliency. By visualizing preferred inputs of the most predictive CNN units, we aim to provide additional insight into the nature of detectability and crowding in natural scenes. </p>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-backward"></i> Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- d3js  -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <!-- <script src="js/jquery.easing.min.js"></script> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+
+    <!-- <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    <script src="js/transition.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+    <!-- Zoom JavaScript -->
+    <script src="js/zoom.js"></script>
+
+</body>
+
+</html>

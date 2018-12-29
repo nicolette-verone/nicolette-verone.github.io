@@ -1,0 +1,106 @@
+{
+  "nodes":[
+    {"name":"Ramkumar P","group":0},
+
+    {"name":"Bayesian integration and non-linear feedback control in a full-body motor task","group":2},
+    {"name":"In praise of “false” models and rich data ","group":3},
+    {"name":"Measuring generalization of visuomotor perturbations in wrist movements using mobile phones", "group":3},
+    {"name":"Towards perceiving robots as humans – three handshake models face the Turing-like handshake test","group":2},
+    {"name":"Differential representations of prior and likelihood uncertainty in the human brain","group":2},
+    {"name":"Generalization of stochastic visuomotor rotations","group":3},
+
+    /*One paper together*/
+    {"name":"Malinen S","group":1},
+    {"name":"Vartiainen N","group":1},
+    {"name":"Hlushchuk Y","group":1},
+    {"name":"Koskinen M","group":1},
+    {"name":"Forss N","group":1},
+    {"name":"Kalso E","group":1},
+
+    {"name":"Jas M","group":1},
+
+    {"name":"Hansen BC","group":1},
+    {"name":"Loschky LC","group":1},
+
+    {"name":"Wanda PA","group":1},
+    {"name":"Cooler S","group":1},
+
+    {"name":"Smith MA","group":1},
+
+    /*Two papers together*/
+    {"name":"Hansen BC","group":2},
+    {"name":"Loschky LC","group":2},
+    {"name":"Fernandes HL","group":2},
+
+    {"name":"Miller LE","group":2},
+    {"name":"Dekleva BM","group":2},
+
+    {"name":"Lawlor PN","group":2},
+    {"name":"Glaser JI","group":2},
+
+    {"name":"Acuna DE","group":2},
+    {"name":"Berniker M","group":2},
+    {"name":"Grafton ST","group":2},
+    {"name":"Turner RS","group":2},
+    
+    /*Three papers together*/
+    {"name":"Segraves MA","group":3},
+
+    /*Four papers together*/
+    {"name":"Hyvärinen A","group":4},
+
+    /*Five papers together*/
+    {"name":"Parkkonen L","group":5},
+    {"name":"Hari R","group":5},
+    
+    /*Eight papers together*/
+    {"name":"Körding KP","group":8},
+    
+    {"name":"Kording KP","group":6},
+    {"name":"Stevenson IH","group":5},
+    {"name":"Albert MV","group":5},
+    {"name":"Avraham G","group":4},
+    {"name":"Acuna DE","group":5},
+    {"name":"Nisky I","group":4},
+    {"name":"Loeb GE","group":4},
+    {"name":"Karniel A","group":4},
+    {"name":"Howard JD","group":4},
+    {"name":"Gottfried JA","group":4}
+   
+
+  ],
+  "links":[
+   
+  
+    {"source":1,"target":9,"value":2},
+    {"source":1,"target":10,"value":4},
+    {"source":1,"target":7,"value":1},
+    {"source":1,"target":8,"value":1},
+
+    {"source":2,"target":9,"value":2},
+
+    {"source":3,"target":9,"value":2},
+    {"source":3,"target":11,"value":4},
+
+ 
+    {"source":4,"target":9,"value":1},
+    {"source":4,"target":12,"value":4},
+    {"source":4,"target":13,"value":1},
+    {"source":4,"target":14,"value":1},
+    {"source":4,"target":15,"value":1},
+    {"source":4,"target":16,"value":2},
+
+  
+    {"source":5,"target":9,"value":2},
+    {"source":5,"target":7,"value":4},
+    {"source":5,"target":17,"value":1},
+    {"source":5,"target":18,"value":1},
+
+    
+    {"source":6,"target":9,"value":2},
+    {"source":6,"target":10,"value":1}
+
+
+    
+  ]
+}

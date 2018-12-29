@@ -1,0 +1,84 @@
+{
+  "nodes":[
+    {"name":"Konrad Kording","group":1},
+    {"name":"Max Berniker","group":2},
+    {"name":"Mark Albert", "group":4},
+    {"name":"Daniel Acuna","group":2},
+    {"name":"Paul Wanda","group":2},
+    {"name":"Pavan Ramkumar","group":2},
+    {"name":"Hugo Fernandes","group":3},
+    {"name":"Iris Vilares","group":3},
+    {"name":"Pat Taylor","group":3},
+    {"name":"Ted Cybulski","group":3},
+    {"name":"Steve Antos","group":3},
+    {"name":"Ben Walker","group":11},
+    {"name":"Yoshiyuki Sato","group":5},
+    {"name":"Corbertt EA","group":7},
+    {"name":"Pereault EJ","group":7},
+    {"name":"Avraham G","group":7},
+    {"name":"Nisky I","group":7},
+    {"name":"Loeb GE","group":7},
+    {"name":"Karniel A","group":7},
+    {"name":"Herrmann M","group":7},
+    {"name":"Jayaraman A","group":7},
+    {"name":"Howard JD","group":7},
+    {"name":"Gottfried JA","group":7}
+  ],
+  "links":[
+    {"source":0,"target":13,"value":1},
+    {"source":0,"target":14,"value":1},
+
+    {"source":13,"target":14,"value":1},
+
+
+    {"source":0,"target":15,"value":1},
+    {"source":0,"target":16,"value":1},
+    {"source":0,"target":17,"value":1},
+    {"source":0,"target":3,"value":1},
+    {"source":0,"target":6,"value":1},
+    {"source":0,"target":18,"value":1},
+
+    {"source":15,"target":16,"value":1},
+    {"source":15,"target":17,"value":1},
+    {"source":15,"target":3,"value":1},
+    {"source":15,"target":6,"value":1},
+    {"source":15,"target":18,"value":1},
+
+    {"source":16,"target":17,"value":1},
+    {"source":16,"target":3,"value":1},
+    {"source":16,"target":6,"value":1},
+    {"source":16,"target":18,"value":1},
+
+    {"source":17,"target":3,"value":1},
+    {"source":17,"target":6,"value":1},
+    {"source":17,"target":18,"value":1},
+
+    {"source":3,"target":6,"value":1},
+    {"source":3,"target":18,"value":1},
+    
+    {"source":6,"target":18,"value":1},
+
+    {"source":0,"target":2,"value":1},
+    {"source":0,"target":19,"value":1},
+    {"source":0,"target":20,"value":1},
+
+    {"source":2,"target":19,"value":1},
+    {"source":2,"target":20,"value":1},
+
+    {"source":19,"target":20,"value":1},
+
+    {"source":0,"target":6,"value":2},
+    {"source":0,"target":7,"value":1},
+    {"source":0,"target":21,"value":1},
+    {"source":0,"target":22,"value":1},
+  
+    {"source":6,"target":7,"value":1},
+    {"source":6,"target":21,"value":1},
+    {"source":6,"target":22,"value":1},
+
+    {"source":7,"target":21,"value":1},
+    {"source":7,"target":22,"value":1},
+
+    {"source":21,"target":22,"value":1}
+  ]
+}

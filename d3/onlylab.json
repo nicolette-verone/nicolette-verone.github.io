@@ -1,0 +1,42 @@
+{
+  "nodes":[
+    {"name":"Konrad Kording","group":1},
+    {"name":"Max Berniker","group":2},
+    {"name":"Mark Albert", "group":4},
+    {"name":"Daniel Acuna","group":2},
+    {"name":"Paul Wanda","group":2},
+    {"name":"Pavan Ramkumar","group":2},
+    {"name":"Hugo Fernandes","group":3},
+    {"name":"Iris Vilares","group":3},
+    {"name":"Pat Taylor","group":3},
+    {"name":"Ted Cybulski","group":3},
+    {"name":"Steve Antos","group":3},
+    {"name":"Ben Walker","group":11},
+    {"name":"Yoshiyuki Sato","group":5},
+    {"name":"Ian Stevenson","group":4},
+    {"name":"Kunlin Wei","group":4}
+
+  ],
+  "links":[
+   
+    {"source":0,"target":3,"value":2},
+    {"source":0,"target":6,"value":2},   
+    {"source":3,"target":6,"value":2},
+   
+    {"source":0,"target":2,"value":2},
+   
+    {"source":0,"target":6,"value":6},
+    {"source":0,"target":7,"value":2},   
+    {"source":6,"target":7,"value":2},
+
+    {"source":6,"target":13,"value":2},
+
+    {"source":0,"target":3,"value":4},
+
+    {"source":0,"target":13,"value":8},
+    {"source":0,"target":14,"value":4},
+    {"source":13,"target":14,"value":4}
+
+    
+  ]
+}
